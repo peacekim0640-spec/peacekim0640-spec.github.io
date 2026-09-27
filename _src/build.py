@@ -114,7 +114,7 @@ ABOUT = '''  <article class="post">
 
 def main():
     posts = sorted((parse_post(f) for f in (ROOT / 'content/posts').glob('*.md')),
-                   key=lambda p: p['date_obj'], reverse=True)
+                   key=lambda p: (p['date_obj'], p.get('order', '0'), p['slug']), reverse=True)
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / 'posts').mkdir(parents=True)
