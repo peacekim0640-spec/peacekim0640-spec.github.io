@@ -61,3 +61,5 @@ aside h3 { font-size: 13px; letter-spacing: 0.06em; color: var(--muted); margin:
 
 .more { font-size: 14px; margin: 0 0 24px; }
 footer { border-top: 1px solid var(--line); padding-block: 18px 32px; font-size: 13px; color: var(--muted); }
+
+.body img { display: block; max-width: 100%; height: auto; max-height: 560px; margin: 16px 0 10px; border-radius: 6px; }
